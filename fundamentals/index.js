@@ -124,3 +124,39 @@ let age = null;
 
 // The symbol type is used to create unique identifiers for objects.
 /*------------------------------------------------------------------------------------- */
+
+/*---------------------------------Value Conversion------------------------------------ */
+let value = true;
+// console.log(typeof value); // boolean
+
+value = String(value); // now value is a string "true"
+// console.log(typeof value);
+
+// console.log(0 / 0); // NaN
+// console.log("" / 0); // NaN
+// console.log(0 / "0"); // NaN
+// console.log(0 / ""); // NaN
+
+// Values that are intuitively “empty”, like 0, an empty string, null, undefined, and NaN, become false.
+// Other values become true.
+
+// console.log(Boolean(null))
+// console.log(Boolean(""))
+// console.log(Boolean("  ")) //A non-empty string, even if it contains only spaces, is considered a truthy value.
+// console.log(Boolean(undefined))
+// console.log(Boolean(NaN))
+
+// console.log(0 + '1') // 01
+// console.log('1' + '1') // 11
+// console.log('9' + 9)  // 99
+// console.log(1 + 4 + '0') // 50 not 140
+// console.log('1' + 3 + 1) // 131 not 14
+
+// console.log(+true) // Same as Number(....)
+// console.log(+"") // 0
+// console.log("" - 0 + 1)
+// console.log(0 + 1 -"")
+// console.log(8 / "4");
+// console.log("8" * "4");
+/*------------------------------------------------------------------------------------- */
+
