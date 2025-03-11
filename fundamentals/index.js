@@ -158,5 +158,25 @@ value = String(value); // now value is a string "true"
 // console.log(0 + 1 -"")
 // console.log(8 / "4");
 // console.log("8" * "4");
+
+// When comparing values of different types, JavaScript converts the values to numbers.
+// console.log('2' > 1)
+// console.log('02' > 2)
+// console.log('2e' > 1)
+
+// console.log(null === undefined) //false
+// console.log(null == undefined) // true
+
+// For maths and other comparisons < > <= >=
+// null/undefined are converted to numbers: null becomes 0, while undefined becomes NaN.
+
+// Yes, typeof null returns "object"`, but that's actually a historical bug in 
+// JavaScript that was never fixed for backward compatibility reasons.
+// console.log(typeof null); // "object"
+// console.log(typeof undefined); // "object"
+
+// for == type coercion and then comparison is done 
+// for === strict comparison is done(both values and type comparison)
+
 /*------------------------------------------------------------------------------------- */
 
